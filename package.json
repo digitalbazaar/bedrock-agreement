@@ -1,6 +1,6 @@
 {
   "name": "bedrock-agreement",
-  "version": "1.0.1-dev",
+  "version": "1.0.1",
   "description": "Bedrock agreement",
   "main": "./lib",
   "scripts": {

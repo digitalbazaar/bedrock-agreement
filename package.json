@@ -30,7 +30,7 @@
     "bedrock": "^1.0.0",
     "bedrock-event-log": "^2.0.0",
     "bedrock-permission": "^2.3.0",
-    "bedrock-mongodb": "^2.0.0"
+    "bedrock-mongodb": "^3.0.0"
   },
   "directories": {
     "lib": "./lib"

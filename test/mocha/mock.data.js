@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2016 Digital Bazaar, Inc. All rights reserved.
  */
- /* jshint node: true */
+/* jshint node: true */
 
 'use strict';
 

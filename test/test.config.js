@@ -9,7 +9,7 @@ require('bedrock-permission');
 var permissions = config.permission.permissions;
 var roles = config.permission.roles;
 
-config.mocha.tests.push(path.join(__dirname, '..', 'test', 'mocha'));
+config.mocha.tests.push(path.join(__dirname, 'mocha'));
 
 // MongoDB
 config.mongodb.name = 'bedrock_agreement_test';
@@ -22,7 +22,7 @@ config.mongodb.adminPrompt = true;
 config.mongodb.dropCollections.onInit = true;
 config.mongodb.dropCollections.collections = [];
 
-roles['bedrock-agreement.test'] ={
+roles['bedrock-agreement.test'] = {
   id: 'bedrock-agreement.test',
   label: 'Agreement Test Role',
   comment: 'Role for Test User',

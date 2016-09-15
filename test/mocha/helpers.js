@@ -5,7 +5,6 @@
 'use strict';
 
 var async = require('async');
-var config = require('bedrock').config;
 var database = require('bedrock-mongodb');
 var uuid = require('uuid').v4;
 

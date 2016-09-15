@@ -1,13 +1,13 @@
 /*
  * Copyright (c) 2016 Digital Bazaar, Inc. All rights reserved.
  */
-/* globals describe, before, after, it, should, beforeEach, afterEach */
+/* globals describe, it, should, beforeEach */
 /* jshint node: true */
 'use strict';
 
 var async = require('async');
 var bedrock = require('bedrock');
-var brAgreement = require('../..');
+var brAgreement = require('bedrock-agreement');
 var database = require('bedrock-mongodb');
 var helpers = require('./helpers');
 var mockData = require('./mock.data');
@@ -87,7 +87,6 @@ describe('bedrock-agreement', function() {
       }, done);
     });
 
-    // tests that accept API does not reject duplicates
     it('accepts two identical agreements specified as strings', function(done) {
       var agreementsAlpha = uuid();
       var agreementsBeta = agreementsAlpha;
@@ -105,7 +104,7 @@ describe('bedrock-agreement', function() {
             callback(err, result);
           });
         },
-        testBoth: ['insertAlpha', 'insertBeta', function(callback, results) {
+        testBoth: ['insertAlpha', 'insertBeta', function(callback) {
           database.collections.eventLog.find({
             'event.type': 'AgreementAccept',
             typeSpecific: database.hash(actor.id)

@@ -1,8 +1,11 @@
 {
-  "name": "bedrock-agreement",
-  "version": "1.0.2-dev",
-  "description": "Bedrock agreement",
-  "main": "./lib",
+  "name": "bedrock-agreement-test",
+  "version": "0.0.1-0",
+  "description": "Bedrock agreement test",
+  "main": "./test",
+  "scripts": {
+    "test": "node --preserve-symlinks test test"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/digitalbazaar/bedrock-agreement"
@@ -21,15 +24,12 @@
   "homepage": "https://github.com/digitalbazaar/bedrock-agreement",
   "dependencies": {
     "async": "^1.5.2",
-    "uuid": "^2.0.2"
-  },
-  "peerDependencies": {
     "bedrock": "^1.0.0",
     "bedrock-event-log": "^2.0.0",
     "bedrock-permission": "^2.3.0",
-    "bedrock-mongodb": "^3.0.0"
-  },
-  "directories": {
-    "lib": "./lib"
+    "bedrock-mongodb": "^3.0.0",
+    "bedrock-test": "^1.0.0",
+    "bedrock-validation": "^2.0.0",
+    "uuid": "^2.0.2"
   }
 }

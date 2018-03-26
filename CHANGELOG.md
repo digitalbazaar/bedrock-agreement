@@ -1,5 +1,8 @@
 # bedrock-agreement ChangeLog
 
+### Changed
+- Update `bedrock-mongodb` peer dependency.
+
 ## 1.0.2 - 2016-09-15
 
 ### Changed
